@@ -116,6 +116,7 @@ public class MainModule extends AbstractModule {
         this.configFile = configFile;
     }
 
+
     @Override
     protected void configure() {
         bindConstant().annotatedWith(Names.named("configFile")).to(configFile);

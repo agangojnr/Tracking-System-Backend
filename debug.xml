@@ -16,15 +16,33 @@
 
     <entry key='mail.debug'>true</entry>
 
-    <entry key='database.driver'>org.h2.Driver</entry>
-    <entry key='database.url'>jdbc:h2:./target/database</entry>
-    <entry key='database.user'>sa</entry>
-    <entry key='database.password'></entry>
+    <!--    <entry key='database.driver'>org.h2.Driver</entry>-->
+    <!--    <entry key='database.url'>jdbc:h2:./target/database</entry>-->
+    <!--    <entry key='database.user'>sa</entry>-->
+    <!--    <entry key='database.password'></entry>-->
+
+<!--    <entry key='database.changelog'></entry>-->
+
+
+<!--    <entry key='database.driver'>com.microsoft.sqlserver.jdbc.SQLServerDriver</entry>-->
+<!--    <entry key='database.url'>jdbc:sqlserver://localhost:1433;databaseName=vtracer;integratedSecurity=true;encrypt=false;</entry>-->
+
+    <entry key='database.driver'>com.microsoft.sqlserver.jdbc.SQLServerDriver</entry>
+    <entry key='database.url'>jdbc:sqlserver://localhost:1433;databaseName=tracer;user=sa;password=@Password;encrypt=false;</entry>
+
+
+
+    <!--    <entry key='database.driver'>com.mysql.cj.jdbc.Driver</entry>-->
+<!--    <entry key='database.url'>jdbc:mysql://localhost:3306/vtracer?useSSL=false</entry>-->
+<!--    <entry key='database.user'>root</entry>-->
+<!--    <entry key='database.password'></entry>-->
+
+
 
     <!--<entry key='server.instantAcknowledgement'>true</entry>
     <entry key='server.buffering.threshold'>5000</entry>-->
 
     <entry key='atrack.custom'>true</entry>
-    <entry key='intellitrac.port'>6037</entry>
+    <entry key='intellitrac.port'>5023</entry>
 
 </properties>

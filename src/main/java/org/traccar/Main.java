@@ -129,6 +129,8 @@ public final class Main {
                 }
             }
 
+
+
             Thread.setDefaultUncaughtExceptionHandler((t, e) -> LOGGER.error("Thread exception", e));
 
             Runtime.getRuntime().addShutdownHook(new Thread(() -> {

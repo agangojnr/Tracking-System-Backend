@@ -79,6 +79,7 @@ public class TokenManager {
         if (data.expiration.before(new Date())) {
             throw new SecurityException("Token has expired");
         }
+        //System.out.println("The token is:"+data);
         return data;
     }
 
